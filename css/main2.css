@@ -573,6 +573,7 @@ button {
   align-items: center;
 }
 
-.marginZero {
+.mobileExplainer {
   margin: 0;
+  text-align: center;
 }
