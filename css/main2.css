@@ -112,6 +112,15 @@ button {
   will-change: transform;
   transform: translateZ(0)
 }
+@media screen and (max-width: 800px) {
+  .firstHeroSection {
+    background-image: none;
+    width: 0;
+    height: 0;
+    position: relative;
+    display: none;
+  }
+}
 
 .lastHeroSection {
   width:100%;
