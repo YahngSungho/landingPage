@@ -1,0 +1,466 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  font-size: calc(10px + (14 - 10) * ((100vw - 300px) / (1600 - 300)));
+}
+
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #B2E247;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #7a7a7a;
+  --bs-gray-dark: #636363;
+  --bs-gray-100: #ededed;
+  --bs-gray-200: #dedede;
+  --bs-gray-300: #d1d1d1;
+  --bs-gray-400: #c2c2c2;
+  --bs-gray-500: #d6d6d6;
+  --bs-gray-600: #bdbdbd;
+  --bs-gray-700: #ababab;
+  --bs-gray-800: #969696;
+  --bs-gray-900: #828282;
+  --bs-primary: #B2E247;
+  --bs-secondary: #6c757d;
+  --bs-success: #B2E247;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #191919;
+  --bs-primary-rgb: 178, 226, 71;
+  --bs-secondary-rgb: 108, 117, 125;
+  --bs-success-rgb: 178, 226, 71;
+  --bs-info-rgb: 13, 202, 240;
+  --bs-warning-rgb: 255, 193, 7;
+  --bs-danger-rgb: 220, 53, 69;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-dark-rgb: 25, 25, 25;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-black-rgb: 0, 0, 0;
+  --bs-body-rgb: 33, 37, 41;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #212529;
+  --bs-body-bg: #fff;
+
+  --ratio: 1.5;
+  --s-7: calc(var(--s-6) / var(--ratio));
+  --s-6: calc(var(--s-5) / var(--ratio));
+  --s-5: calc(var(--s-4) / var(--ratio));
+  --s-4: calc(var(--s-3) / var(--ratio));
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio));
+  --s6: calc(var(--s5) * var(--ratio));
+  --s7: calc(var(--s6) * var(--ratio));
+  --s8: calc(var(--s7) * var(--ratio));
+  --s9: calc(var(--s8) * var(--ratio));
+  --s10: calc(var(--s9) * var(--ratio));
+  --s11: calc(var(--s10) * var(--ratio));
+  --s12: calc(var(--s11) * var(--ratio));
+}
+
+
+@font-face {
+    font-family: 'gothicA1';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/GothicA1-Thin.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'gothicA1';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/GothicA1-ExtraLight.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'gothicA1';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/GothicA1-Light.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'gothicA1';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/GothicA1-Regular.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'gothicA1';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/GothicA1-Medium.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'gothicA1';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/GothicA1-SemiBold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'gothicA1';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/GothicA1-Bold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'gothicA1';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/GothicA1-ExtraBold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'gothicA1';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/GothicA1-Black.ttf') format('truetype')
+}
+
+/*// -----------------------------------------------------------------------------------------------------------*/
+
+@font-face {
+  font-family: 'namsan';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/08SeoulNamsanL_0.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'namsan';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/08SeoulNamsanM_0.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'namsan';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/08SeoulNamsanB_0.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'namsan';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/08SeoulNamsanEB_0.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'namsan';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/08SeoulNamsanvert_0.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'kopub';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/KoPubWorld Dotum Light.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'kopub';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/KoPubWorld Dotum Medium.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'kopub';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/KoPubWorld Dotum Bold.ttf') format('truetype')
+}
+
+
+
+/*// -----------------------------------------------------------------------------------------------------------*/
+html {
+  color: #222;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
