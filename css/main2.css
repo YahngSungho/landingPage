@@ -280,6 +280,7 @@ button {
   width: fit-content;
   margin: auto;
   will-change: transform;
+  transform: translateZ(0)
 }
 
 .section1 > div {
