@@ -91,7 +91,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
         last5: '485-06-01987',
         last6: '개인정보 보호정책',
         last7: '이용약관',
-        mobile1: '노트가든 앱 출시',
+        mobile1: '노트가든 모바일 앱 출시',
         mobile2: '이제는 PC로 필기하고 모바일로 암기하세요!'
       }
     },

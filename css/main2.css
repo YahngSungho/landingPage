@@ -543,8 +543,8 @@ button {
 }
 
 .storeButton {
-  width: var(--s6);
-  height: auto;
+  height: var(--s3);
+  width: auto;
   cursor: pointer;
 }
 
@@ -558,7 +558,7 @@ button {
   display: flex;
   flex-direction: column;
   /*align-items: center;*/
-  margin-left: 10%;
+  margin-left: 30%;
   gap: var(--s0);
   height: 100%;
 }
@@ -571,8 +571,8 @@ button {
   gap: var(--s1);
   /*justify-content: space-evenly;*/
   margin-bottom: 10%;
-  margin-left: 10%;
-  margin-top: 20%;
+  margin-left: 30%;
+  margin-top: 10%;
 }
 
 @media screen and (max-width: 1200px) {
@@ -602,14 +602,14 @@ button {
 
 .mobileExplainer {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: var(--s1);
   color: black;
   /*text-align: center;*/
 }
 
 .mobileHeading {
   font-weight: 700;
-  font-size: var(--s4);
+  font-size: var(--s2);
   color: black;
 }
 
